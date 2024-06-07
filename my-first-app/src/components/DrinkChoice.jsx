@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 export const DrinkChoice = ({drink}) => {
 const [userDrink, setUserDrink] = useState();
