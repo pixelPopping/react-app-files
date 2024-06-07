@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
-	const [userDrink, setUserDrink] = useState(coffee);
+	const [userDrink, setUserDrink] = useState();
     
 	return (
 		<div className="app">
