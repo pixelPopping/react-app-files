@@ -1,6 +1,6 @@
 
 export const DrinkChoice = ({drink}) => {
-const [userDrink, setUserDrink] = useState();
+
 return (
     <>
     <h2>Your choice: {drink.name}</h2>
