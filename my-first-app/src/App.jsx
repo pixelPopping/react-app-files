@@ -1,9 +1,10 @@
 import './App.css';
+import { useState } from 'react';
 import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkSearch } from './components/DrinkSearch';
 import { DrinkChoice } from './components/DrinkChoice';
 import { tea, coffee } from './utils/data';
-import { useState } from 'react';
+
 
 
 export const App = () => {
