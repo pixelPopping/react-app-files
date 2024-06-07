@@ -1,15 +1,14 @@
-import {useState} from 'react';
-import {TextInput} from './ui/TextInput';
+import { useState } from 'react';
+import { TextInput } from './ui/Textinput';
 
-export const DrinkSeacrch = () => {
-    const [searchField, setSearchField] = useState('test drink');
+export const DrinkSearch = () => {
+	const [searchField, setSearchField] = useState('test drink');
 
-return (
-    <>
-
-    <label>Search for drinks:</label>
-    <TextInput />
-    <p>{searchField}</p>
-    </>
-);
+	return (
+		<>
+			<label>Search for drinks:</label>
+			<TextInput />
+			<p>{searchField}</p>
+		</>
+	);
 };
