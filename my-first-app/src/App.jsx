@@ -7,7 +7,7 @@ import {DrinkChoice} from './components/DrinkChoice';
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
 	const userDrink = undefined;
-	const DrinkSearch = {availableDrinks};
+	const DrinkSearch = undefined;
 
 	return (
 		<div className="app">
