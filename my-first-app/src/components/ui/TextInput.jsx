@@ -1,3 +1,3 @@
-import './Textinput.ccs';
+import './TextInput.ccs';
 
-export const Textinput =() => <input className="text-input"></input>
+export const TextInput =() => <input className="text-input"></input>
