@@ -13,4 +13,4 @@ export const DrinkButtons = ({drinkOne, drinkTwo}) => {
 			</div>
 		</>
 	);
-};q
+};
