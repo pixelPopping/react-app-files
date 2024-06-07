@@ -6,7 +6,7 @@ import {DrinkChoice} from './components/DrinkChoice';
 
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
-	const userDrink = tea;
+	{userDrink && <DrinkChoice drink ={userDrink} />}
 
 	return (
 		<div className="app">
