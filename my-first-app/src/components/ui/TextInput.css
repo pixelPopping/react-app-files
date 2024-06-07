@@ -1,3 +1,8 @@
-import './TextInput.css';
-
-export const TextInput = () => <input className="text-input"></input>;
+.text-input {
+	margin-top: 1rem;
+	border-radius: 10px;
+	border: 3px solid #9ed2c6;
+	padding: 1rem;
+	color: dimgray;
+	font-size: 1.25rem;
+}
