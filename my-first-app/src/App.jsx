@@ -10,7 +10,8 @@ export const App = () => {
 
 	return (
 		<div className="app">
-			<h1>{greeting}</h1>
+			< h1 className={userDrink ? "smallHeader" : "bigHeader"}>{greeting}</h1>
+			<DrinkSearch availableDrinks={availableDrinks}/>
 			<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
 			{userDrink ? (<DrinkChoice drink={userDrink} />): 'Please select a drink'}
 		</div>
