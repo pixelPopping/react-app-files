@@ -1,13 +1,13 @@
-import { useState } from 'react';
 import './App.css';
 import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkChoice } from './components/DrinkChoice';
 import { tea, coffee } from './utils/data';
+import { useState } from 'react';
 
 
 export const App = () => {
-	const [userDrink, setUserDrink] = useState(tea);
 	const greeting = 'Welcome to our cafe!';
+	const [userDrink, setUserDrink] = useState(tea);
     
 	return (
 		<div className="app">
