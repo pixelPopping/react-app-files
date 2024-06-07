@@ -1,8 +1,8 @@
 
 import './App.css';
-import {tea, coffee} from './utils/data';
 import { DrinkButtons } from './components/DrinkButtons';
-import {DrinkChoice} from './components/DrinkChoice';
+import { DrinkChoice } from './components/DrinkChoice';
+import { tea, coffee } from './utils/data';
 
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
@@ -10,9 +10,14 @@ export const App = () => {
 
 	return (
 		<div className="app">
-            <h1>{greeting}</h1>
-			<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
-			{userDrink ? (<DrinkChoice drink={userDrink} />): 'Please select a drink'}
+			{userDrink ? (
+				<DrinkChoice drink={userDrink} />
+			) : (
+				<>
+					<h1>{greeting}</h1>
+					<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
+				</>
+			)}
 		</div>
 	);
 };
