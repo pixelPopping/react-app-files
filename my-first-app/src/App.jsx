@@ -6,11 +6,11 @@ import { tea, coffee } from './utils/data';
 
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
-	const userDrink = undefined;
+	const setUserDrink = undefined;
 
 	return (
 		<div className="app">
-			{userDrink ? (
+			{setUserDrink ? (
 				<DrinkChoice drink={userDrink} />
 			) : (
 				<>
