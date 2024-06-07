@@ -12,7 +12,7 @@ export const App = () => {
 		<div className="app">
 			<h1>{greeting}</h1>
 			<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
-			{userDrink && (<DrinkChoice drink={userDrink} />)}
+			{userDrink ? (<DrinkChoice drink={userDrink} />): 'Please select a drink'}
 		</div>
 	);
 };
