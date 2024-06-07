@@ -1,6 +1,6 @@
 
 import './App.css';
-import {coffee, tea} from './untils/data';
+import {tea, coffee} from './utils/data';
 import { DrinkButtons } from './components/DrinkButtons';
 import {DrinkChoice} from './utils/data';
 
