@@ -6,7 +6,6 @@ import { DrinkChoice } from './components/DrinkChoice';
 import { tea, coffee } from './utils/data';
 
 
-export const TextInput =() => <input className="text-input"></input>
 
 export const App = () => {
 	const greeting = 'Welcome to our cafe!';
