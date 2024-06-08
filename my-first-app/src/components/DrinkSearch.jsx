@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TextInput } from './ui/TextInput';
+import { TextInput } from './ui/TextInput'; // Remove the ".jsx" extension
 
 export const DrinkSearch = () => {
 	const [searchField, setSearchField] = useState('test drink');
