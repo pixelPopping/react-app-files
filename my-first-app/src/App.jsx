@@ -4,6 +4,7 @@ import { DrinkButtons } from './components/DrinkButtons';
 import { DrinkSearch } from './components/DrinkSearch';
 import { DrinkChoice } from './components/DrinkChoice';
 import { tea, coffee } from './utils/data';
+import { TextInput } from './components/ui/TextInput';
 
 
 
