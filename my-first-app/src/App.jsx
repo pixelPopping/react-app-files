@@ -18,7 +18,6 @@ export const App = () => {
 			) : (
 				<>
 					<h1>{greeting}</h1>
-					<DrinkSearch availebleDrinks ={availebleDrinks}/>
 					<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
 				</>
 			)}
