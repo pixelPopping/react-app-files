@@ -1,8 +1,4 @@
-// DrinkItem.js
-
-import React from 'react';
-import PropTypes from 'prop-types';
-import './DrinkItem.css'; // Import your stylesheet
+ // Import your stylesheet
 
 const DrinkItem = ({ drink }) => {
   return (
