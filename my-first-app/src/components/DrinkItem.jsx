@@ -1,21 +1,10 @@
- // Import your stylesheet
+import './DrinkItem.css';
 
-const DrinkItem = ({ drink }) => {
+export const DrinkItem = ({ drink }) => {
   return (
     <div className="drink-item">
       <img src={drink.imgUrl} alt={drink.alt} className="drink-image" />
-      <p className="drink-name">{drink.name}</p>
+      <p>{drink.name}</p>
     </div>
   );
 };
-
-DrinkItem.propTypes = {
-  drink: PropTypes.shape({
-    ID: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    imgUrl: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-export default DrinkItem;
