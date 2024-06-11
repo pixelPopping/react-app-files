@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { DrinkSearch } from './components/DrinkSearch';
 import { DrinkChoice } from './components/DrinkChoice';
 
+import PropTypes from 'prop-types';
+import './DrinkItem.css';
 
 
 export const App = () => {
