@@ -17,7 +17,7 @@ export const App = () => {
 			) : (
 							<>
 					<h1>{greeting}</h1>
-					<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
+					<DrinkSearch/>
 				</>
 			)}
 		</div>
