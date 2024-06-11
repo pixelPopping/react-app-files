@@ -17,7 +17,7 @@ export const App = () => {
 			) : (
 							<>
 					<h1>{greeting}</h1>
-					<DrinkSearch/>
+					<DrinkSearch clickFn={setUserDrink} />
 				</>
 			)}
 		</div>
