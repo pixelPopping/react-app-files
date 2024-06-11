@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import { DrinkSearch } from './components/DrinkSearch';
 import { DrinkChoice } from './components/DrinkChoice';
-import { Button } from './components/ui/Button';
+
 
 
 
@@ -12,11 +12,14 @@ export const App = () => {
     
 	return (
 		<div className="app">
+				{userDrink ? (
+				<DrinkChoice drink={userDrink} />
+			) : (
 							<>
 					<h1>{greeting}</h1>
 					<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
 				</>
-			
+			)}
 		</div>
 	);
 };
