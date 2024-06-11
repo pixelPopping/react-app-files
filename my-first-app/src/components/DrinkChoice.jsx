@@ -1,6 +1,6 @@
 import { Button } from "./ui/Button";
 
-export const DrinkChoice = ({drink}) => {
+export const DrinkChoice = ({drink, clickFn}) => {
 return (
     <>
     <h2>Your choice: {drink.name}</h2>
