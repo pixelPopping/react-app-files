@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import { DrinkSearch } from './components/DrinkSearch';
 import { DrinkChoice } from './components/DrinkChoice';
+import { Heading } from '@chakra-ui/react'
 
 
 
@@ -16,7 +17,9 @@ export const App = () => {
 				<DrinkChoice drink={userDrink} />
 			) : (
 							<>
-					<h1>{greeting}</h1>
+					<Heading size="2xl" mb={8} color="blue.200">
+					{greeting}
+					</Heading>
 					<DrinkSearch clickFn={setUserDrink} />
 				</>
 			)}
