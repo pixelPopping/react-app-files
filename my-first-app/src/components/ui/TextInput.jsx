@@ -1,5 +1,5 @@
 import './TextInput.css';
 
-export const TextInput =({handleChange}) => {
-return <input className="input" onChange={handleChange}></input>;
+export const TextInput =({changeFn}) => {
+return <input className="input" onChange={changeFn}></input>;
 };
