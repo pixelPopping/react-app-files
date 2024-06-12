@@ -1,6 +1,7 @@
 import { DrinkItem } from "./DrinkItem";
 
 export const DrinkList = ({ drinks, clickFn}) => {
+    
     return (
         <>
             {drinks.map((drink) => (
@@ -9,3 +10,6 @@ export const DrinkList = ({ drinks, clickFn}) => {
         </>
     );
 };
+
+
+
