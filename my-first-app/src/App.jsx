@@ -1,31 +1,26 @@
-import './App.css';
+import { Center, Heading } from '@chakra-ui/react';
 import { useState } from 'react';
-import { DrinkSearch } from './components/DrinkSearch';
 import { DrinkChoice } from './components/DrinkChoice';
-import { Heading } from '@chakra-ui/react'
-
-
-
+import { DrinkSearch } from './components/DrinkSearch';
 
 export const App = () => {
-	const greeting = 'Welcome to our cafe!';
-	const [userDrink, setUserDrink] = useState();
-    
-	return (
-		<div className="app">
-				{userDrink ? (
-				<DrinkChoice drink={userDrink} clickFn={setUserDrink} />
-			) : (
-							<>
-					<Heading size="2xl" mb={8} color="blue.200">
-					{greeting}
-					</Heading>
-					<DrinkSearch clickFn={setUserDrink} />
-				</>
-			)}
-		</div>
-	);
+  const [userDrink, setUserDrink] = useState();
+
+  const greeting = 'Welcome to our cafe!';
+
+  return (
+    <Center h="100vh" flexDir="column">
+      {userDrink ? (
+        <DrinkChoice drink={userDrink} clickFn={setUserDrink} />
+      ) : (
+        <>
+          <Heading size="2xl" mb={8} color="blue.200">
+            {greeting}
+          </Heading>
+          <DrinkSearch clickFn={setUserDrink} />
+        </>
+      )}
+    </Center>
+  );
 };
-
-
 
