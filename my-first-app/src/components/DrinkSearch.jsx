@@ -3,7 +3,7 @@ import { TextInput } from './ui/TextInput'; // Remove the ".jsx" extension
 import { DrinkList } from './DrinkList';
 import { availableDrinks } from '../utils/data';
 
-export const DrinkSearch = ({onClick}) => {
+export const DrinkSearch = ({clickFn}) => {
 	const [searchField, setSearchField] = useState('');
    
 	const matchedDrinks = availableDrinks.filter((drink) => {
@@ -17,7 +17,7 @@ export const DrinkSearch = ({onClick}) => {
 		<>
 			<label>Search for drinks:</label>
 			<TextInput changeFn={handleChange} w={200} mb={8}/>
-			<DrinkList onClick= {onClick} drinks={matchedDrinks}/>
+			<DrinkList clickFn= {clickFn} drinks={matchedDrinks}/>
 
 		</>
 	);
