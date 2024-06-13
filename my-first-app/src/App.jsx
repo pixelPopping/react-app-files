@@ -20,7 +20,7 @@ export const App = () => {
 					<Heading size="2xl" mb={8} color="blue.200">
 					{greeting}
 					</Heading>
-					<DrinkSearch onClick={setUserDrink} />
+					<DrinkSearch clickFn={setUserDrink} />
 				</>
 			)}
 		</div>
