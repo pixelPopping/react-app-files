@@ -1,10 +1,18 @@
-import { Center, Image, Text} from '@chakra-ui/react'
+import { Center, Image, Text, WrapItem } from '@chakra-ui/react';
 
-export const DrinkItem = ({ drink, clickFn}) => {
+export const DrinkItem = ({ drink, clickFn }) => {
   return (
-    <Center gap={8} cursor={'pointer'}  onClick={() => clickFn(drink)}>
-      <Image src={drink.imgUrl} w={50} h={50} alt={drink.alt}/>
-      <Text>{drink.name}</Text>
-    </Center>
+    <WrapItem>
+      <Center gap={8} cursor={'pointer'} onClick={() => clickFn(drink)}>
+        <Image
+          src={drink.imgUrl}
+          w={50}
+          h={50}
+          borderRadius={'xl'}
+          alt={drink.alt}
+        />
+        <Text fontWeight={'450'}>{drink.name}</Text>
+      </Center>
+    </WrapItem>
   );
 };
