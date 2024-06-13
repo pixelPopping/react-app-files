@@ -1,8 +1,8 @@
 import { Center, Image, Text} from '@chakra-ui/react'
 
-export const DrinkItem = ({ drink, onClick}) => {
+export const DrinkItem = ({ drink, clickFn}) => {
   return (
-    <Center gap={8} cursor={'pointer'}  onClick={() => onClick(drink)}>
+    <Center gap={8} cursor={'pointer'}  onClick={() => clickFn(drink)}>
       <Image src={drink.imgUrl} w={50} h={50} alt={drink.alt}/>
       <Text>{drink.name}</Text>
     </Center>
