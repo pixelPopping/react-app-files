@@ -7,7 +7,7 @@ return (
     <img src={drink.imgUrl} alt={drink.alt} width="100px"
     height="100px" />
     <p>Your drink will be ready soon</p>
-    <Button text={'Change selection'} clickFn={() => clickFn(drink)} />
+    <Button text={'Change selection'} clickFn={() => clickFn()} />
     </>
 );
 };
