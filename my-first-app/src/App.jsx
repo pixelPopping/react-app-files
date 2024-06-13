@@ -14,7 +14,7 @@ export const App = () => {
 	return (
 		<div className="app">
 				{userDrink ? (
-				<DrinkChoice drink={userDrink} />
+				<DrinkChoice drink={userDrink} clickFn={setUserDrink} />
 			) : (
 							<>
 					<Heading size="2xl" mb={8} color="blue.200">
